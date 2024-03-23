@@ -1,0 +1,399 @@
+/* Reset and Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Color Scheme */
+:root {
+  --primary-color: #ff7faa; /* Pink pastel color */
+}
+
+/* General Styles */
+section {
+  padding: 100px;
+}
+
+/* Hero Section Styles */
+#hero {
+  background-image: url("hero.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: left;
+  color: #fff;
+  height: 800px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  width: 50%;
+  margin-top: 200px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  color: var(--primary-color);
+}
+
+.hero-description {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* About Section Styles */
+#about {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-box {
+  background-color: #fff;
+  padding: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.about-title {
+  font-size: 36px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Navigation Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1000;
+  background-color: #333;
+  text-align: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Competences Section Styles */
+#competences {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.competences-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.competences-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 0 auto 30px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #6b2737;
+}
+
+.competences-item:hover {
+  background: linear-gradient(45deg, #ffacbd, #fff);
+  color: #6b2737;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.competences-icon {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.competences-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.competences-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666666;
+}
+
+/* Competences Header Styles */
+.competencesheader {
+  color: #6b2737;
+  background-color: #f6dfeb;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.competencesheader::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ff80aa;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Competences Items */
+@media (min-width: 768px) {
+  .competences-item {
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 20px;
+    float: left;
+  }
+
+  .competences-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/* Travaux Section Styles */
+#travaux {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.travaux-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.travail {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.travail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.travail img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.travail h2 a {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 15px;
+  display: block;
+  margin: 20px;
+  border: #6b2737;
+  padding: 30px;
+  border-radius: 20%;
+  background-color: #f6dfeb;
+}
+
+.travail h2 a:hover {
+  color: #ff6b6b;
+}
+.travail p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.travail .technologie {
+  font-size: 14px;
+  color: #999;
+  margin-top: 10px;
+}
+
+/* Portfolio Grid Styles */
+.port {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.port > * {
+  flex: 0 0 calc(50% - 20px); /* Adjust the width to 50% */
+  max-width: calc(50% - 20px); /* Adjust the max-width to 50% */
+  margin-bottom: 20px;
+}
+
+.port > *:nth-child(2n) {
+  margin-right: 0; /* Remove margin-right for every second child */
+}
+
+/* Additional Competences Styles */
+.competences {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.competences .competencesheader {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  color: #333;
+}
+
+.competences .competences-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.competences .competences-item {
+  width: 100%;
+  margin: 0 20px 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.competences .competences-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.competences .competences-title {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.competences .competences-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.competences .competences-info {
+  padding: 20px;
+}
+
+.competences .competences-info img {
+  margin-bottom: 10px;
+}
+
+.competences .competences-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.competences .competences-title a:hover {
+  color: #ff6b6b;
+}
+
+.travail img {
+  width: 50px;
+  height: 50px;
+  display: block; /* Ensures that the margin auto works */
+  margin: auto; /* Centers the image horizontally */
+}
+
+.description {
+  padding: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
