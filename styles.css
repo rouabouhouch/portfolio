@@ -13,11 +13,12 @@
 
 /* General Styles */
 section {
-  padding: 100px;
+  padding: 50px;
 }
 
 /* Hero Section Styles */
 #hero {
+  height: auto;
   background-image: url("hero.png");
   background-size: cover;
   background-position: center;
@@ -33,6 +34,9 @@ section {
 }
 
 .hero-text {
+  width: 100%; /* Adjusted width for better responsiveness */
+  text-align: center; /* Center-align the text */
+  margin-top: 50px; /* Adjusted margin for better spacing */
   width: 50%;
   margin-top: 200px;
 }
@@ -96,7 +100,12 @@ header {
   width: 100%;
   padding: 20px 0;
   z-index: 1000;
-  background-color: #ff4d94;
+  background: linear-gradient(
+    to bottom,
+    #ff80ab,
+    #ffffff
+  ); /* Gradient background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow underneath */
   text-align: center;
 }
 
@@ -126,7 +135,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -136,20 +145,46 @@ nav ul li a:hover {
   color: var(--primary-color);
 }
 
-/* Responsive Navigation */
-@media (max-width: 768px) {
-  .logo {
-    font-size: 20px;
+@media screen and (max-width: 768px) {
+  .toggle-btn {
+    display: block;
   }
-
-  nav ul {
-    flex-direction: column;
+  nav {
+    display: none;
+    width: 100%;
     text-align: center;
-    margin-top: 10px;
   }
-
+  nav ul {
+    display: block;
+  }
   nav ul li {
-    margin: 10px 0;
+    display: block;
+  }
+}
+
+/* Your existing CSS for header and navigation styles */
+
+/* Toggle button styles */
+.toggle-btn {
+  display: none; /* Initially hide the toggle button */
+  background-color: transparent; /* Dark background color */
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px; /* Add some border radius for styling */
+}
+
+.toggle-btn:hover {
+  background-color: #ff7faa; /* Darker background color on hover */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .toggle-btn {
+    display: block; /* Show the toggle button on small screens */
+    position: relative; /* Position it relatively to the header */
   }
 }
 
@@ -415,13 +450,15 @@ html {
 }
 
 #contact-form {
-  display: grid;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 label {
   font-weight: bold;
-  color: #ff80ab; /* Pink pastel color */
+  color: #ff4d94; /* Pink pastel color */
 }
 
 input[type="text"],
@@ -447,4 +484,69 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #ff4d94; /* Darker shade of pink for hover */
+}
+
+/* General Styles */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 50px; /* Adjusted padding for better spacing on smaller screens */
+  }
+
+  .hero-title {
+    font-size: 36px; /* Adjusted font size for smaller screens */
+  }
+
+  .hero-description {
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+
+  /* About Section Styles */
+  .about-content {
+    text-align: center; /* Center-align the content */
+  }
+
+  .about-box {
+    max-width: 800px; /* Adjusted max-width for better display on smaller screens */
+  }
+
+  .about-title {
+    font-size: 24px; /* Adjusted font size for smaller screens */
+  }
+
+  .about-description {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+
+  .travaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Navigation Styles */
+  nav ul {
+    flex-direction: column; /* Display the navigation items vertically on smaller screens */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Adjusted margin for better spacing between navigation items */
+  }
+  .port {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .travaux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  form {
+    max-width: 200px;
+  }
 }
