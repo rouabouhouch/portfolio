@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Roua</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gwftALM1KFtgzv4G0PY5lW9TAy9LlPtkZS+xENxssKxeIpxXr2N4Z1jM2O3/dLd9"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
     <p>--</p>
@@ -341,5 +335,27 @@
         </div>
       </section>
     </div>
+
+    <section id="contact" class="contact">
+      <div class="contact-content">
+        <h2 class="contact-title">Contactez-moi</h2>
+        <form id="contact-form" "https://formsubmit.co/rouabouhouch777@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+        <div id="response-message"></div>
+      </div>
+    </section>
   </body>
 </html>
