@@ -26,6 +26,7 @@ section {
   text-align: left;
   color: #fff;
   height: 800px;
+  transition: background-image 0.5s ease;
 }
 
 .hero-content {
@@ -45,6 +46,20 @@ section {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.letter {
+  display: inline-block;
+  animation: wave 0.5s infinite alternate;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 .hero-title span {
