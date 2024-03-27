@@ -19,7 +19,7 @@ section {
 /* Hero Section Styles */
 #hero {
   height: auto;
-  background-image: url("hero.png");
+  background-image: url("images/hero.png");
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
