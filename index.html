@@ -365,8 +365,35 @@
       </section>
 
 
+    <section id="contact" class="contact">
+      <div class="contact-content">
+        <h2 class="contact-title">Contactez-moi</h2>
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/dff13b48ee4daa06201a3ae9a93f1d27"
+          method="POST"
+        >
+          <input type="text" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://rouabouhouch.github.io/portfolio/success.html"
+          />
+          <label for="name">Nom:</label>
+          <input type="text" name="name" required placeholder="nom" />
+          <label for="email">email:</label>
+          <input type="email" name="email" required placeholder="email" />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-      
+          <button type="submit">Envoyer</button>
+        </form>
+        <div id="response-message"></div>
+      </div>
+    </section>
+
+
   </body>
 </html>
 
