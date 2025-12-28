@@ -1,238 +1,691 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Roua</title>
+    <meta name="description" content="Portfolio de Roua Bouhouch - Ingénieure en Intelligence Artificielle et Développeuse Full Stack">
+    <meta name="keywords" content="IA, Machine Learning, Développement Web, Python, Deep Learning, Portfolio">
+    <title>Roua Bouhouch | Ingénieure IA & Développeuse</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="index.js" as="script">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script defer src="index.js"></script>
   </head>
   <body>
-    <p>--</p>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
-    <header>
-      <div class="logo"></div>
-      <button class="toggle-btn">&#9776;</button>
-      <nav>
-        <ul>
-          <li><a href="#hero">Acceuil</a></li>
-          <li><a href="#about">A Propos</a></li>
-          <li><a href="#competences">Compétences </a></li>
-          <li><a href="#Projets">Projets </a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <span class="logo-text">RB</span>
+        </div>
+        
+        <button class="toggle-btn" aria-label="Menu de navigation" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#hero" class="nav-link">Accueil</a></li>
+            <li><a href="#about" class="nav-link">À Propos</a></li>
+            <li><a href="#competences" class="nav-link">Compétences</a></li>
+            <li><a href="#projets" class="nav-link">Projets</a></li>
+            <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            <p class="wave-text" onmouseover="startWave(this)" onmouseout="stopWave(this)">
-              Bienvenue<br />
-              <span>Je suis Roua Bouhouch</span>
-            </p>
-            <p class="hero-description">
-              Ingénieure en intelligence artificielle, passionnée par le développement et la recherche.<br />
-              J’explore l’apprentissage automatique, la robotique et la modélisation intelligente pour créer des solutions qui font sens.<br />
-              Découvrez mes projets et mon parcours !
-            </p>            
-        </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="about-content">
-        <div class="about-text">
-          <div class="about-box">
-            <h2 class="about-title">À propos</h2>
-            <p class="about-description">
-              Je suis une développeuse passionnée, actuellement étudiante en
-              dernière année de licence à l'Université Claude Bernard Lyon 1, à
-              la recherche d'opportunités de stage et d'alternance.
-              <br /><br />
-              Spécialisée en programmation orientée objet avec C++, C#,
-              notamment dans le cadre de Unity, et Java, j'ai également une
-              solide expérience en développement web avec HTML, CSS, JavaScript,
-              React, PHP et SQL.
-              <br /><br />
-              J'ai travaillé avec les méthodes agiles pour la gestion de projet
-              et j'ai exploré des domaines tels que la synthèse d'image avec
-              GLSL, l'analyse statistique avec R et l'intelligence artificielle.
-              Je suis enthousiaste à l'idée de contribuer à des projets
-              innovants et de continuer à évoluer professionnellement.
-            </p>
+    <main id="main-content">
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                <span class="hero-greeting">Bonjour, je suis</span>
+                <span class="hero-name">Roua Bouhouch</span>
+              </h1>
+              <p class="hero-subtitle">Ingénieure en Intelligence Artificielle & Développeuse Full Stack</p>
+              <p class="hero-description">
+                Passionnée par le développement et la recherche en IA, j'explore l'apprentissage automatique, 
+                la robotique et la modélisation intelligente pour créer des solutions innovantes. 
+                Découvrez mes projets et mon parcours !
+              </p>
+              <div class="hero-cta">
+                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <div class="image-placeholder">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-scroll">
+            <a href="#about" class="scroll-down" aria-label="Défiler vers le bas">
+              <i class="fas fa-chevron-down"></i>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="about-content">
+            <div class="about-text">
+              <div class="about-card">
+                <h3 class="about-subtitle">Ingénieure en Intelligence Artificielle</h3>
+                <p class="about-description">
+                  Étudiante en Master d'Intelligence Artificielle à l'Université Claude Bernard Lyon 1, je suis passionnée par le développement et l'optimisation de systèmes intelligents. Mon expertise couvre l'apprentissage automatique, le deep learning, l'apprentissage par renforcement et les réseaux de neurones graphiques.
+                </p>
+                <p class="about-description">
+                  Forte d'une double compétence en développement logiciel (Python, PyTorch, C++, Java) et en IA, je conçois des solutions innovantes allant de la robotique autonome aux systèmes de recommandation intelligents. Mon expérience inclut également le développement web full-stack avec React, PHP et SQL.
+                </p>
+                <p class="about-description">
+                  J'ai travaillé sur des projets de recherche appliquée au CRNL, optimisant des modèles d'IA pour l'analyse de données neurologiques. Rigoureuse, dotée d'un esprit analytique et passionnée par l'innovation, je recherche activement des opportunités de stage et d'alternance pour contribuer à des projets d'IA ambitieux.
+                </p>
+                
+                <div class="about-links">
+                  <a href="#contact" class="btn btn-outline">Recherche stage/alternance en IA</a>
+                  <a href="#projets" class="btn btn-primary">Voir mes projets IA</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Projets réalisés</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Technologies maîtrisées</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Années d'expérience</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="competences" class="competences">
-        <h2 class="competencesheader">Compétences</h2>
-        
-        <div class="competences-container">
-          <div class="competences-content">
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon_ai1.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Apprentissage Automatique</h3>
-                <p class="competences-description">
-                  Maîtrise des concepts de machine learning supervisé et non supervisé, incluant régression, classification, clustering et réduction de dimensionnalité. Capable de construire et d’évaluer des modèles performants avec Python, scikit-learn et pandas.
-                </p>
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Mes Compétences</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Technologies et domaines d'expertise</p>
+          </div>
+          
+          <div class="competences-grid">
+            <div class="skill-category">
+              <h3 class="category-title">Intelligence Artificielle</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <i class="fas fa-brain skill-icon"></i>
+                  <div class="skill-info">
+                    <h4 class="skill-name">Machine Learning</h4>
+                    <p class="skill-desc">Régression, classification, clustering, réduction de dimensionnalité</p>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-network-wired skill-icon"></i>
+                  <div class="skill-info">
+                    <h4 class="skill-name">Deep Learning</h4>
+                    <p class="skill-desc">CNN, RNN, PyTorch, TensorFlow, vision par ordinateur, NLP</p>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-robot skill-icon"></i>
+                  <div class="skill-info">
+                    <h4 class="skill-name">Reinforcement Learning</h4>
+                    <p class="skill-desc">Q-Learning, DQN, agents intelligents, optimisation de politiques</p>
+                  </div>
+                </div>
               </div>
             </div>
             
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon_ai2.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Deep Learning</h3>
-                <p class="competences-description">
-                  Développement de modèles profonds tels que CNN, RNN et autoencodeurs. Expérience avec PyTorch et TensorFlow pour la vision par ordinateur, le NLP et la génération de données synthétiques.
-                </p>
+            <div class="skill-category">
+              <h3 class="category-title">Développement</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <i class="fas fa-code skill-icon"></i>
+                  <div class="skill-info">
+                    <h4 class="skill-name">Développement Web</h4>
+                    <p class="skill-desc">HTML, CSS, JavaScript, React, PHP, MySQL</p>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-cogs skill-icon"></i>
+                  <div class="skill-info">
+                    <h4 class="skill-name">Programmation OOP</h4>
+                    <p class="skill-desc">C++, C#, Java, Unity, architectures modulaires</p>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-database skill-icon"></i>
+                  <div class="skill-info">
+                    <h4 class="skill-name">Analyse de Données</h4>
+                    <p class="skill-desc">Python, R, pandas, numpy, visualisation, statistiques</p>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon_ai3.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Apprentissage par Renforcement</h3>
-                <p class="competences-description">
-                  Conception et implémentation d’agents intelligents utilisant Q-Learning, DQN et REINFORCE. Expérience en simulation d’environnements et optimisation de politiques pour la prise de décision autonome.
-                </p>
-              </div>
+          </div>
+          
+          <div class="technologies">
+            <h3 class="technologies-title">Technologies</h3>
+            <div class="tech-icons">
+              <div class="tech-icon" title="Python"><i class="fab fa-python"></i></div>
+              <div class="tech-icon" title="JavaScript"><i class="fab fa-js-square"></i></div>
+              <div class="tech-icon" title="Java"><i class="fab fa-java"></i></div>
+              <div class="tech-icon" title="C++"><i class="fas fa-c"></i></div>
+              <div class="tech-icon" title="React"><i class="fab fa-react"></i></div>
+              <div class="tech-icon" title="Git"><i class="fab fa-git-alt"></i></div>
+              <div class="tech-icon" title="Linux"><i class="fab fa-linux"></i></div>
+              <div class="tech-icon" title="Docker"><i class="fab fa-docker"></i></div>
             </div>
-            
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon_ai4.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Graph Neural Networks</h3>
-                <p class="competences-description">
-                  Expérience dans la modélisation et l’analyse de données relationnelles avec des GNN. Capable de prédire des liens, d’agréger des messages et d’encoder des attributs de nœuds pour des réseaux complexes.
-                </p>
-              </div>
-            </div>
-            
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon_ai5.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Traitement du Langage Naturel (NLP)</h3>
-                <p class="competences-description">
-                  Développement de pipelines NLP complets incluant tokenisation, encodage, padding et modèles RNN pour classification de texte et analyse d’émotions. Utilisation de PyTorch pour l’implémentation et l’entraînement.
-                </p>
-              </div>
-            </div>
-            
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon_ai6.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Analyse de Données et Modélisation</h3>
-                <p class="competences-description">
-                  Capable de prétraiter, nettoyer et transformer de grands ensembles de données. Analyse statistique, feature engineering et visualisation pour extraire des insights exploitables et construire des modèles prédictifs efficaces.
-                </p>
-              </div>
-            </div>
-            
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon1.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Développement web</h3>
-                <p class="competences-description">
-                  Avec une solide expérience en développement web, je suis
-                  capable de créer des sites web modernes et fonctionnels.
-                  Maîtrisant HTML, CSS, JavaScript, PHP et SQL, je suis en
-                  mesure de concevoir des interfaces attrayantes et des
-                  fonctionnalités robustes. Je suis également compétente dans
-                  l'utilisation de frameworks comme React pour optimiser le
-                  processus de développement. Ma passion pour la création de
-                  solutions web efficaces fait de moi une candidate idéale pour
-                  des projets web stimulants.
-                </p>
-              </div>
-            </div>
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon2.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Programmation OOP</h3>
-                <p class="competences-description">
-                  Avec une solide expertise en programmation orientée objet, je
-                  conçois des solutions logicielles efficaces et évolutives.
-                  Maîtrisant les langages comme C++, C#, et Java, je développe
-                  des applications robustes et modulaires. Mon expérience
-                  pratique avec Unity me permet de créer des simulations
-                  interactives et des jeux immersifs. Passionnée par
-                  l'innovation et l'excellence technique, je suis une candidate
-                  idéale pour les opportunités en programmation orientée objet.
-                </p>
-              </div>
-            </div>
+          </div>
+        </div>
+      </section>
 
-
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon3.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">
-                  Administration Système Unix/Linux
-                </h3>
-                <p class="competences-description">
-                  Avec mes compétences en administration Linux et en
-                  programmation concurrente C++, je suis prête à gérer des
-                  systèmes informatiques complexes et à développer des
-                  applications performantes. Ma capacité à configurer des
-                  serveurs Linux et à créer des applications multi-threaded en
-                  C++ fait de moi une candidate idéale pour les rôles liés à
-                  l'administration système et au développement logiciel
-                  concurrent.
+      <section id="projets" class="projets">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Explorez mes réalisations en Intelligence Artificielle et Développement</p>
+          </div>
+          
+          <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="ai">IA & ML</button>
+            <button class="filter-btn" data-filter="robotique">Robotique</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="software">Logiciel</button>
+            <button class="filter-btn" data-filter="graphique">Graphique</button>
+          </div>
+          
+          <div class="projects-grid">
+            <!-- Projets de Master en IA -->
+            <div class="project-card" data-category="ai robotique">
+              <div class="project-image">
+                <img src="images/product11.png" alt="Robots Autonomes" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Vision</span>
+                  <span class="project-tag">TCP</span>
+                </div>
+                <h3 class="project-title">Robots Autonomes & Navigation par Vision</h3>
+                <p class="project-description">
+                  Développement en équipe de robots autonomes dotés d'une navigation basée sur la vision, 
+                  communication TCP et contrôle de mouvement via Python. Système multi-agents coordonnés.
                 </p>
+                <div class="project-links">
+                  <a href="https://github.com/Thomas-aub/Hungry_Hungry_Hippos_Robots/tree/image_analysis" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=C2pXi4mY1Jo" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fas fa-video"></i> Vidéos
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon4.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Analyse de données</h3>
-                <p class="competences-description">
-                  Avec une expertise avancée en analyse de données avec R, je
-                  suis capable de transformer des ensembles de données complexes
-                  en informations exploitables. En utilisant des techniques
-                  statistiques et des méthodes avancées d'analyse, je suis en
-                  mesure de découvrir des tendances significatives et de fournir
-                  des insights précieux pour prendre des décisions éclairées. Ma
-                  capacité à communiquer efficacement les résultats d'analyse me
-                  permet d'aider les organisations à tirer le meilleur parti de
-                  leurs données pour atteindre leurs objectifs stratégiques.
+            
+            <div class="project-card" data-category="ai">
+              <div class="project-image">
+                <img src="images/product12.png" alt="Framework Argumentatif" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Argumentation</span>
+                  <span class="project-tag">ABA+</span>
+                </div>
+                <h3 class="project-title">Framework de Raisonnement Argumentatif (ABA/ABA+)</h3>
+                <p class="project-description">
+                  Conception d'un framework Python modulaire pour l'argumentation basée sur les hypothèses. 
+                  Génération automatique d'arguments, calcul d'attaques et visualisation interactive.
                 </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/Continuous-Assessment-Report-Reasoning-and-Argumentation-Frameworks-in-AI.git" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                 
+                </div>
               </div>
             </div>
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon5.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Réseaux</h3>
-                <p class="competences-description">
-                  Spécialiste des réseaux et de l'architecture TCP/IP, je
-                  maîtrise la conception, la configuration et la gestion des
-                  infrastructures réseau à grande échelle. Expertise en
-                  technologies Cisco pour assurer des performances optimales et
-                  une sécurité maximale. Compétences en résolution de problèmes,
-                  en sécurité réseau et en administration de services tels que
-                  DHCP, DNS et VPN. Passionnée par l'optimisation des réseaux et
-                  dévouée à la fiabilité des systèmes.
+            
+            <div class="project-card" data-category="ai">
+              <div class="project-image">
+                <img src="images/product13.png" alt="Système de Recommandation" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">scikit-learn</span>
+                  <span class="project-tag">Streamlit</span>
+                </div>
+                <h3 class="project-title">Système de Recommandation Musicale</h3>
+                <p class="project-description">
+                  Moteur de recommandation par contenu utilisant clustering K-Means et similarité cosinus. 
+                  Application interactive Streamlit avec API Spotify pour l'exploration musicale.
                 </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/Sys-recommendation.git" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+  
+                </div>
               </div>
             </div>
-            <div class="competences-item">
-              <div class="competences-info">
-                <img src="images/icon6.png" alt="" class="competences-icon" />
-                <h3 class="competences-title">Gestion De Projets</h3>
-                <p class="competences-description">
-                  Spécialiste de la gestion agile et des méthodes agiles, je
-                  conduis avec succès les projets en favorisant la collaboration
-                  et l'adaptabilité. Maîtrisant les pratiques Scrum, Kanban et
-                  Lean, je veille à une gestion optimale du cycle de
-                  développement, assurant ainsi la livraison de produits de
-                  haute qualité dans des délais courts. Mon approche axée sur
-                  l'amélioration continue et l'engagement envers l'excellence
-                  technique garantissent la satisfaction des clients et la
-                  réussite des projets.
+            
+            <div class="project-card" data-category="ai">
+              <div class="project-image">
+                <img src="images/product14.png" alt="GNN Prédiction de Liens" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">PyTorch</span>
+                  <span class="project-tag">GNN</span>
+                  <span class="project-tag">Deep Learning</span>
+                </div>
+                <h3 class="project-title">Projet GNN 2025 - Prédiction de Liens</h3>
+                <p class="project-description">
+                  Auto-encodeur variationnel sur graphe (VGAE-GCN) pour la prédiction de liens dans un réseau aéroportuaire mondial. 
+                  Performance : AUC ≈ 0.982.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/gnn.git" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="https://drive.google.com/file/d/1_Z48kCdSyJFWQ2GsZvTSo5mglwcll0Cq/view" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fas fa-file-pdf"></i> Rapport
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card" data-category="ai">
+              <div class="project-image">
+                <img src="images/product15.png" alt="Classification d'Émotions" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">PyTorch</span>
+                  <span class="project-tag">NLP</span>
+                  <span class="project-tag">RNN</span>
+                </div>
+                <h3 class="project-title">Classification d'Émotions (NLP)</h3>
+                <p class="project-description">
+                  Classificateur de texte basé sur RNN avec pipeline NLP complet : tokenisation, vocabulaire, 
+                  encodage one-hot et padding. Précision de 67% sur les tests.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/projetnlp.git" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card" data-category="ai">
+              <div class="project-image">
+                <img src="images/product16.png" alt="Apprentissage par Renforcement" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">PyTorch</span>
+                  <span class="project-tag">RL</span>
+                  <span class="project-tag">DQN</span>
+                </div>
+                <h3 class="project-title">Agents d'Apprentissage par Renforcement</h3>
+                <p class="project-description">
+                  Agents RL pour CartPole et LunarLander : REINFORCE, DQN, exploration epsilon-greedy, 
+                  replay buffer et réseaux cibles. Implémentation complète sous PyTorch.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/M2IA-UCBL1/2025-m2ia-intagents-tp1-atraoui.git" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="https://github.com/M2IA-UCBL1/2025-m2ia-intagents-tp2-atraoui-bouhouch-tp2.git" 
+                  target="_blank" 
+                  class="project-link">
+                 <i class="fab fa-github"></i> Code
+               </a>
+               <a href="https://github.com/M2IA-UCBL1/2025-m2ia-intagents-tp3-bouhouch-atraoui-tp3.git" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+               </a>
+               <a href="https://github.com/M2IA-UCBL1/tpreinforce-bouhouch-atraoui-tp4.git" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+               </a>
+            
+                
+                </div>
+              </div>
+            </div>
+            
+            <!-- Projets de Licence -->
+            <div class="project-card" data-category="ai robotique">
+              <div class="project-image">
+                <img src="images/product6.png" alt="Simulation RPG Tactique" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">IA</span>
+                  <span class="project-tag">Agents</span>
+                  <span class="project-tag">Simulation</span>
+                </div>
+                <h3 class="project-title">Simulation de RPG Tactique Distribué</h3>
+                <p class="project-description">
+                  Moteur de jeu de rôle tactique simulant des agents autonomes. Implémentation de stratégies 
+                  individuelles et collectives dans un environnement dynamique multi-agents.
+                </p>
+                <div class="project-links">
+                  <a href="https://forge.univ-lyon1.fr/p2314124/lifprojet" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fas fa-code"></i> Code
+                  </a>
+                  <a href="https://www.canva.com/design/DAGCSaPSjKQ/Zy8kiVIFtdeB4qIkTXdWDQ/edit?utm_content=DAGCSaPSjKQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-youtube"></i> Présentation
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card" data-category="graphique">
+              <div class="project-image">
+                <img src="images/product3.png" alt="Monde 3D SDF/GLSL" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">GLSL</span>
+                  <span class="project-tag">SDF</span>
+                  <span class="project-tag">3D</span>
+                </div>
+                <h3 class="project-title">Monde Interactif 3D (SDF/GLSL)</h3>
+                <p class="project-description">
+                  Création d'un univers immersif en 3D utilisant des fonctions de distance signées (SDF) 
+                  et des shaders GLSL. Rendu temps réel avec animations et effets visuels avancés.
+                </p>
+                <div class="project-links">
+             
+                  <a href="https://www.shadertoy.com/view/DsKSWz" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fas fa-eye"></i> Prévisualisation et Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card" data-category="software">
+              <div class="project-image">
+                <img src="images/product2.png" alt="Monopoly C++" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">C++</span>
+                  <span class="project-tag">SDL2</span>
+                  <span class="project-tag">UML</span>
+                </div>
+                <h3 class="project-title">Jeu de Monopoly (C++)</h3>
+                <p class="project-description">
+                  Version informatique complète du jeu Monopoly développée en C++ avec la bibliothèque SDL2. 
+                  Architecture logicielle robuste avec gestion graphique et logique de jeu avancée.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/Monopoy" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=wLCoDOVFmoc&list=PLvEUWy29bijDN5Fpw8_gCQV-vYirbHVCT" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-youtube"></i> Démo Complète
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card" data-category="software">
+              <div class="project-image">
+                <img src="images/product7.png" alt="Sokoban Java" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Java</span>
+                  <span class="project-tag">OOP</span>
+                  <span class="project-tag">MVC</span>
+                </div>
+                <h3 class="project-title">Sokoban (Java MVC)</h3>
+                <p class="project-description">
+                  Implémentation du jeu Sokoban en Java suivant l'architecture Modèle-Vue-Contrôleur. 
+                  Gestion avancée des niveaux, interface graphique et algorithmes de résolution.
+                </p>
+                <div class="project-links">
+                  <a href="https://forge.univ-lyon1.fr/p2001434/sokoban" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fas fa-code"></i> Code
+                  </a>
+                  <a href="https://drive.google.com/file/d/118vvhNPbHh6zuUAl9zlxDcuYtCMIWmoQ/view" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fas fa-file-pdf"></i> Rapport
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card" data-category="web">
+              <div class="project-image">
+                <img src="images/product1.png" alt="Gestion Playlists" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">PHP</span>
+                  <span class="project-tag">SQL</span>
+                  <span class="project-tag">MySQL</span>
+                </div>
+                <h3 class="project-title">Générateur de Playlists Personnalisées</h3>
+                <p class="project-description">
+                  Application web complète de gestion de playlists musicales avec base de données SQL. 
+                  Interface utilisateur intuitive, gestion des comptes et recommandations personnalisées.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/Syst-me-de-Gestion-de-Playlists-Musicales" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Projets Personnels Additionnels -->
+            <div class="project-card" data-category="web">
+              <div class="project-image">
+                <img src="images/product10.png" alt="Application Web Gestion Données" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Flask</span>
+                  <span class="project-tag">DataViz</span>
+                </div>
+                <h3 class="project-title">Application Web de Gestion et Visualisation de Données</h3>
+                <p class="project-description">
+                  Application complète pour télécharger, analyser et visualiser des fichiers Excel. 
+                  Génération de statistiques, gestion des valeurs manquantes et préparation pour l'IA.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/Application-Web-de-Gestion-et-Visualisation-de-Donn-es/tree/master" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card" data-category="software">
+              <div class="project-image">
+                <img src="images/product9.png" alt="Pong IA" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Pygame</span>
+                  <span class="project-tag">IA</span>
+                </div>
+                <h3 class="project-title">Jeu de Pong contre IA</h3>
+                <p class="project-description">
+                  Implémentation du jeu classique Pong avec une IA intelligente en adversaire. 
+                  Gameplay dynamique avec augmentation progressive de la difficulté.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/Pong" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card" data-category="ai">
+              <div class="project-image">
+                <img src="images/product8.png" alt="Analyse Ventes" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">pandas</span>
+                  <span class="project-tag">Analyse</span>
+                </div>
+                <h3 class="project-title">Analyse Dynamique des Ventes</h3>
+                <p class="project-description">
+                  Analyse complète de données de ventes synthétiques : corrélations, tendances mensuelles, 
+                  segmentation client et modélisation prédictive des prix. Insights business avancés.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/Analyse-Dynamique-des-Ventes-Exploration-et-Pr-vision" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card" data-category="ai">
+              <div class="project-image">
+                <img src="images/product4.png" alt="Projet Statistique" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">R</span>
+                  <span class="project-tag">Statistiques</span>
+                  <span class="project-tag">Analyse</span>
+                </div>
+                <h3 class="project-title">Projet Statistique Avancé avec R</h3>
+                <p class="project-description">
+                  Analyse statistique complète avec R : visualisation de données, tests statistiques, 
+                  modélisation et interprétation des résultats pour la prise de décision.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/Stats-with-R/blob/main/stats.pdf" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fas fa-file-pdf"></i> Rapport
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-card" data-category="web">
+              <div class="project-image">
+                <img src="images/product5.png" alt="Application Pomodoro" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">CSS</span>
+                  <span class="project-tag">JavaScript</span>
+                </div>
+                <h3 class="project-title">Application Pomodoro Productivité</h3>
+                <p class="project-description">
+                  Application web pour la gestion du temps avec technique Pomodoro. 
+                  Chronomètre intelligent, compteur de sessions et système de récompenses.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/rouabouhouch/Pomodoro" 
+                     target="_blank" 
+                     class="project-link">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Carte "Plus de Projets" -->
+            <div class="project-card more-projects">
+              <div class="more-content">
+                <i class="fas fa-plus"></i>
+                <h3>Et bien plus...</h3>
+                <p>Découvrez tous mes projets complets sur GitHub</p>
+                <a href="https://github.com/rouabouhouch" target="_blank" class="btn btn-outline">
+                  <i class="fab fa-github"></i> Explorer GitHub
+                </a>
+                <p class="more-stats">
+                  <span>25+ Projets</span> • 
+                  <span>10+ Technologies</span> • 
+                  <span>3+ Années d'expérience</span>
                 </p>
               </div>
             </div>
@@ -240,325 +693,114 @@
         </div>
       </section>
 
-      <section id="Projets" class="competences">
-         <h2 class="competencesheader">Mes Projets Informatiques</h2>
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Contactez-moi</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Disponible pour des opportunités de stage et d'alternance</p>
+          </div>
           
-          <div class="competences-content">
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product11.png" />
-              <h2>
-                <a href="https://github.com/Thomas-aub/Hungry_Hungry_Hippos_Robots/tree/image_analysis" target="_blank">
-                  Robots Autonomes & Navigation par Vision
-                </a>
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Développement d’un système multi-robots avec navigation par vision, communication TCP et contrôle du mouvement. Coordination d’agents autonomes dans un environnement dynamique.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> Python, Vision, IA, Robotique, Réseaux
-              </p>
-            </div>
-
-            
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product12.png" />
-              <h2>
-                <a href="https://github.com/rouabouhouch/Continuous-Assessment-Report-Reasoning-and-Argumentation-Frameworks-in-AI.git" target="_blank">
-                  Framework de Raisonnement Argumentatif
-                </a>
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Conception d’un framework Python modulaire pour la génération automatique d’arguments, le calcul d’attaques, la gestion des préférences et la visualisation de sémantiques graduelles.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> Python, IA, Argumentation, Algorithmique
-              </p>
-            </div>
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product13.png" />
-              <h2>
-                <a href="https://github.com/rouabouhouch/Sys-recommendation.git" target="_blank">
-                  Système de Recomand Musicale
-                </a>
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Moteur de recommandation par contenu utilisant clustering K-Means, similarité cosinus et interface interactive Streamlit pour l’exploration musicale.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> Python, scikit-learn, Machine Learning, Streamlit
-              </p>
-            </div>
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product14.png" />
-              <h2>
-                <a href="https://github.com/rouabouhouch/gnn.git" target="_blank">
-                  Projet GNN – Prédiction de Liens
-                </a>
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Implémentation d’un auto-encodeur variationnel sur graphe (VGAE-GCN) pour la prédiction de liens dans un réseau aéroportuaire mondial. AUC ≈ 0.982.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> PyTorch, GNN, Deep Learning, Graphes
-              </p>
-            </div>
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product15.png" />
-              <h2>
-                <a href="https://github.com/rouabouhouch/projetnlp.git" target="_blank">
-                  Classificateur d’Émotions (NLP)
-                </a>
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Développement d’un classificateur de texte basé sur RNN avec pipeline NLP complet : tokenisation, encodage, padding et évaluation.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> PyTorch, NLP, RNN, Deep Learning
-              </p>
-            </div>
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product16.png" />
-              <h2>
-                <a href="https://github.com/M2IA-UCBL1/2025-m2ia-intagents-tp2-atraoui-bouhouch-tp2.git" target="_blank">
-                  Agents d’Apprentissage par Renforcement
-                </a>
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Conception d’agents RL pour CartPole et LunarLander : REINFORCE, DQN, exploration epsilon-greedy, replay buffer et réseaux cibles.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> PyTorch, Reinforcement Learning, IA
-              </p>
-            </div>
-                                    
-                                    
-
-		         <div class="competences-item">
-              <img class="competences-icon" src="images/product10.png" />
-              <h2>
-                <a
-                  href="https://github.com/rouabouhouch/Application-Web-de-Gestion-et-Visualisation-de-Donn-es/tree/master"
-                  target="_blank"
-                  >Application Web de Gestion et Visualisation de Données</a
-                >
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Cette application web est conçue pour gérer le téléchargement, le stockage, l'analyse et la visualisation de fichiers Excel. Elle permet aux utilisateurs de télécharger des fichiers, de sélectionner des colonnes pour l'analyse, de générer des statistiques descriptives et de créer des visualisations graphiques. L'application permet également de gérer les valeurs manquantes et de normaliser les données en vue d'une utilisation future dans des projets d'intelligence artificielle. Les utilisateurs peuvent extraire les colonnes importantes et télécharger les données transformées.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> Python, Flask, pandas ,matplotlib, scikit-learn, scipy, seaborn 
-              </p>
-            </div>
-
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product6.png" />
-              <h2>
-                <a
-                  href="https://forge.univ-lyon1.fr/p2314124/lifprojet"
-                  target="_blank"
-                  >IA et Evolution</a
-                >
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Le projet d'évolution de population dans Unity simule une population soumise à diverses contraintes telles que la recherche de nourriture et l'évitement des prédateurs. L'IA favorise la survie en prenant des décisions en temps réel pour maximiser les chances de survie, en tenant compte des ressources disponibles et des interactions avec d'autres espèces. Ce projet explore les concepts d'évolution et d'adaptation dans un écosystème virtuel contrôlé par des algorithmes d'intelligence artificielle.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong>IA , C# , Unity , Machine Learning
-              </p>
-            </div>
-
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product7.png" />
-              <h2>
-                <a
-                  href="https://forge.univ-lyon1.fr/p2001434/sokoban"
-                  target="_blank"
-                  >Sokoban avec Java</a
-                >
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Le projet Sokoban en Java utilise le modèle MVC (Modèle-Vue-Contrôleur) pour créer un jeu de puzzle où le joueur déplace des caisses dans un entrepôt. Le modèle gère les éléments du jeu, la vue affiche le jeu et le contrôleur gère les interactions avec le joueur. Cette structure modulaire permet une maintenance et une extension faciles du jeu.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> Java OOP MVC
-              </p>
-            </div>
-
-
-                <div class="competences-item">
-              <img class="competences-icon" src="images/product9.png" />
-              <h2>
-                <a
-                  href=" https://github.com/rouabouhouch/Pong"
-                  target="_blank"
-                  >Jeu de Pong contre IA</a
-                >
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Pong est un jeu classique de tennis de table virtuel où deux joueurs contrôlent des raquettes sur les côtés opposés de l'écran. Le but est de marquer des points en faisant passer une balle lumineuse au-dessus de la raquette de l'adversaire. Dans cette version, vous pouvez défier l'ordinateur dans un mode solo intense, où la vitesse de la balle augmente à chaque rebond, offrant une expérience de jeu palpitante et stimulante.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> Python Pygame
-              </p>
-            </div>
-            
-          
-
-
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product8.png" />
-              <h2>
-                <a
-                  href="https://github.com/rouabouhouch/Analyse-Dynamique-des-Ventes-Exploration-et-Pr-vision"
-                  target="_blank"
-                  >Analyse Dynamique des Ventes:</a
-                >
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Ce projet d'analyse de données en Python utilise un ensemble de données synthétiques sur les ventes pour explorer les corrélations entre les variables, analyser les tendances mensuelles des ventes, segmenter les clients en clusters basés sur leur comportement d'achat, et construire un modèle de prédiction du prix unitaire des produits. L'objectif est d'extraire des informations utiles sur les tendances de vente et les comportements des clients à partir des données disponibles.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> Analyse de données Python pandas, numpy, matplotlib
-              </p>
-            </div>
-
-
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product2.png" />
-              <h2>
-                <a
-                  href="https://github.com/rouabouhouch/Monopoy"
-                  target="_blank"
-                  >Monopoly</a
-                >
-              </h2>
-              <div class="lien">
-                <a
-                  href="https://www.youtube.com/watch?v=wLCoDOVFmoc&list=PLvEUWy29bijDN5Fpw8_gCQV-vYirbHVCT&ab_channel=RoRo"
-                  target="_blank"
-                  >Lien Vidéo</a
-                >
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h3>Email</h3>
+                  <a href="mailto:rouabouhouch777@gmail.com">rouabouhouch777@gmail.com</a>
+                </div>
               </div>
-              <p class="description">
-                <strong>Description :</strong> Le projet consiste à concevoir et
-                à développer une version informatique du jeu de Monopoly en
-                utilisant le langage de programmation C++ et la bibliothèque
-                SDL2 pour la gestion des graphismes et de l'interface
-                utilisateur. Le projet a été réalisé en collaboration avec un
-                groupe d'autres étudiants, et il a été partagé avec plus de 600
-                étudiants au sein de l'université.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> C++ SDL2 UML Agile
-              </p>
-            </div>
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product1.png" />
-              <h2>
-                <a
-                  href="https://github.com/rouabouhouch/Syst-me-de-Gestion-de-Playlists-Musicales"
-                  target="_blank"
-                  >Système de Gestion de Playlists Musicales</a
-                >
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Le système de gestion de
-                playlists musicales est une application web qui permet aux
-                utilisateurs de créer, gérer et écouter des listes de lecture
-                musicales. Il utilise une base de données SQL pour stocker les
-                informations sur les chansons, les listes de lecture et les
-                utilisateurs, ainsi que PHP, HTML et CSS pour créer l'interface
-                utilisateur.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> HTML CSS JS PHP MySQL MariaDB
-              </p>
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <div>
+                  <h3>GitHub</h3>
+                  <a href="https://github.com/rouabouhouch" target="_blank">github.com/rouabouhouch</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h3>Localisation</h3>
+                  <p>Lyon, France</p>
+                </div>
+              </div>
             </div>
             
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product3.png" />
-              <h2>
-                <a href="https://www.shadertoy.com/view/DsKSWz" target="_blank"
-                  >Mondes en Mouvement</a
-                >
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Ce projet sur ShaderToy crée un environnement 3D interactif en temps réel avec des animations d'avion et de bateau, un moulin à vent en mouvement, un océan réaliste avec des vagues, des textures de relief complexes et une implémentation Phong pour des effets d'éclairage authentiques, combinant des techniques avancées de synthèse d'image pour une scène immersive.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> synthèse image GLSL
-              </p>
-            </div>
-            <div  class="competences-item">
-              <img class="competences-icon" src="images/product4.png" />
-              <h2>
-                <a
-                  href="https://github.com/rouabouhouch/Stats-with-R/blob/main/stats.pdf"
-                  target="_blank"
-                  >Projet statistique</a
-                >
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> Le projet de statistiques utilise des méthodes statistiques et des outils informatiques comme R pour analyser des ensembles de données, identifier des tendances, réaliser des prédictions et évaluer des hypothèses. Il comprend des tâches telles que la visualisation des données, l'application de tests statistiques, la modélisation de données et l'interprétation des résultats pour des décisions éclairées.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> Analyse de données - R
-              </p>
-            </div>
-            <div class="competences-item">
-              <img class="competences-icon" src="images/product5.png" />
-              <h2>
-                <a
-                  href="https://github.com/rouabouhouch/Pomodoro"
-                  target="_blank"
-                  >Application Pomodoro</a
-                >
-              </h2>
-              <p class="description">
-                <strong>Description :</strong> L'application Pomodoro aide les utilisateurs à gérer leur temps de manière productive en utilisant la technique Pomodoro. Elle inclut un chronomètre pour les périodes de travail et de repos, un compteur de sessions pour suivre les progrès, et un système de récompenses en "gold" pour encourager la constance et la discipline dans les tâches.
-              </p>
-              <p class="technologie">
-                <strong>Technologie :</strong> HTML JS CSS
-              </p>
-            </div>
-            
-
-
+            <form id="contact-form" 
+                  action="https://formsubmit.co/dff13b48ee4daa06201a3ae9a93f1d27" 
+                  method="POST"
+                  class="contact-form">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://rouabouhouch.github.io/portfolio/success.html">
+              
+              <div class="form-group">
+                <label for="name">Nom *</label>
+                <input type="text" id="name" name="name" required placeholder="Votre nom">
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" placeholder="Sujet du message">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Envoyer le message
+              </button>
+            </form>
+          </div>
         </div>
       </section>
+    </main>
 
-
-    <section id="contact" class="contact">
-      <div class="contact-content">
-        <h2 class="contact-title">Contactez-moi</h2>
-        <form
-          id="contact-form"
-          action="https://formsubmit.co/dff13b48ee4daa06201a3ae9a93f1d27"
-          method="POST"
-        >
-          <input type="text" name="_honey" style="display: none" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://rouabouhouch.github.io/portfolio/success.html"
-          />
-          <label for="name">Nom:</label>
-          <input type="text" name="name" required placeholder="nom" />
-          <label for="email">email:</label>
-          <input type="email" name="email" required placeholder="email" />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
-          <button type="submit">Envoyer</button>
-        </form>
-        <div id="response-message"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-text">RB</span>
+            <p>Ingénieure en IA & Développeuse Full Stack</p>
+          </div>
+          
+          <div class="footer-links">
+            <a href="#hero">Accueil</a>
+            <a href="#about">À Propos</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+          </div>
+          
+          <div class="footer-social">
+            <a href="https://github.com/rouabouhouch" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/roua-bouhouch" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:rouabouhouch777@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Roua Bouhouch. Tous droits réservés.</p>
+          <p>Portfolio réalisé avec ❤️</p>
+        </div>
       </div>
-    </section>
+    </footer>
 
-
+    <script>
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
-
-
-
