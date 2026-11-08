@@ -24,3 +24,34 @@ a:focus-visible,button:focus-visible{outline:3px solid #4ca9ed;outline-offset:4p
 .project-link:hover{border-color:currentColor}
 .filter-btn{transition:background-color .2s,color .2s,border-color .2s}
 @media(max-width:700px){.projects-feature{grid-template-columns:1fr;padding:26px 22px}.feature-diagram{max-width:360px;width:100%;margin:auto}.hero-social{gap:18px}.hero-visual{height:275px}.hero h1{font-size:clamp(37px,10vw,46px)}}
+
+/* Animated project visuals: accessible, lightweight, and GPU-friendly */
+.project-card{--mx:50%;--my:50%;--rx:0deg;--ry:0deg;--lift:0px;position:relative;isolation:isolate;transform:translate3d(0,var(--lift),0) perspective(1000px) rotateX(var(--rx)) rotateY(var(--ry));transform-style:preserve-3d;transition:transform .38s cubic-bezier(.2,.8,.2,1),box-shadow .38s ease,border-color .38s ease;box-shadow:0 10px 30px rgba(16,32,55,.035)}
+.project-card:hover,.project-card:focus-within,.project-card:focus-visible{--lift:-7px;box-shadow:0 26px 65px rgba(28,54,98,.16);border-color:#b9c9e1}
+.project-card:focus-visible{outline:3px solid #4b98ef;outline-offset:4px}
+.project-card::after{content:"";pointer-events:none;position:absolute;inset:0;border-radius:inherit;background:radial-gradient(310px circle at var(--mx) var(--my),rgba(87,162,238,.10),transparent 70%);opacity:0;transition:opacity .4s;z-index:2}
+.project-card:hover::after,.project-card:focus-within::after{opacity:1}
+.project-image{position:relative;height:205px;overflow:hidden;isolation:isolate;background:linear-gradient(145deg,#d9e8f5,#edf5ff)}
+.project-image::before{content:"";position:absolute;inset:-45%;z-index:0;background:conic-gradient(from 35deg,transparent 0 17%,rgba(92,171,255,.19) 25%,transparent 34% 64%,rgba(103,216,221,.22) 76%,transparent 85%);animation:visualOrbit 17s linear infinite}
+.project-image::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,transparent 58%,rgba(9,24,46,.52));pointer-events:none}
+.project-image img{position:relative;z-index:1;display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.01);filter:saturate(.9);transition:transform .85s cubic-bezier(.19,1,.22,1),filter .6s ease;will-change:transform}
+.project-card:hover .project-image img,.project-card:focus-within .project-image img,.project-card:focus-visible .project-image img{transform:scale(1.10);filter:saturate(1.1) contrast(1.03)}
+.project-image-glow{position:absolute;z-index:2;inset:0;pointer-events:none;background:radial-gradient(circle at 24% 18%,rgba(255,255,255,.22),transparent 48%);mix-blend-mode:screen}
+.project-visual-index,.project-visual-cue{position:absolute;z-index:3;bottom:14px;color:white;letter-spacing:1.5px;font-size:10px;font-weight:800}
+.project-visual-index{left:17px;display:inline-grid;place-items:center;min-width:32px;height:28px;border:1px solid #ffffff80;border-radius:7px;background:#0c244250;backdrop-filter:blur(8px)}
+.project-visual-cue{right:16px;display:flex;align-items:center;gap:8px;opacity:.85;transform:translateY(0);transition:opacity .35s,transform .35s}
+.project-visual-cue span{font-size:17px;line-height:1}
+.project-card:hover .project-visual-cue,.project-card:focus-within .project-visual-cue{opacity:1;transform:translateY(-3px)}
+.project-card:nth-child(5n+1) .project-image{background:linear-gradient(130deg,#dce8ff,#bae7e8)}
+.project-card:nth-child(5n+2) .project-image{background:linear-gradient(130deg,#e0dcff,#c9effd)}
+.project-card:nth-child(5n+3) .project-image{background:linear-gradient(130deg,#ffe5d2,#bee5ec)}
+.project-card:nth-child(5n+4) .project-image{background:linear-gradient(130deg,#d4ece7,#dbe4ff)}
+.project-card:nth-child(5n) .project-image{background:linear-gradient(130deg,#e8e3fa,#bfe5f6)}
+.project-card:nth-child(5n+2) .project-image::before{animation-direction:reverse;animation-duration:21s}
+.project-card:nth-child(5n+4) .project-image::before{animation-duration:24s}
+.project-card.is-revealed{animation:cardEnter .75s both;animation-delay:var(--reveal-delay,0ms)}
+@keyframes visualOrbit{to{transform:rotate(360deg)}}
+@keyframes cardEnter{from{opacity:0;translate:0 22px}to{opacity:1;translate:0 0}}
+@media (hover:none),(pointer:coarse){.project-card{--rx:0deg!important;--ry:0deg!important}.project-card:hover{--lift:0px}.project-image img{will-change:auto}}
+@media(max-width:700px){.project-image{height:215px}.project-card{transform:none!important}.project-card.is-revealed{animation-duration:.5s}}
+@media(prefers-reduced-motion:reduce){.project-image::before{animation:none!important}.project-card,.project-image img,.project-visual-cue{transition:none!important;transform:none!important}.project-card.is-revealed{animation:none!important}.project-card::after{display:none}}
