@@ -1,234 +1,33 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio de Roua Bouhouch - Ingénieure en Intelligence Artificielle et Développeuse Full Stack">
-    <meta name="keywords" content="IA, Machine Learning, Développement Web, Python, Deep Learning, Portfolio">
-    <title>Roua Bouhouch | Ingénieure IA & Développeuse</title>
-    
-    <!-- Preload critical assets -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="index.js" as="script">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script defer src="index.js"></script>
-  </head>
-  <body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
-
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <span class="logo-text">RB</span>
-        </div>
-        
-        <button class="toggle-btn" aria-label="Menu de navigation" aria-expanded="false">
-          <span class="hamburger"></span>
-        </button>
-        
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="#hero" class="nav-link">Accueil</a></li>
-            <li><a href="#about" class="nav-link">À Propos</a></li>
-            <li><a href="#competences" class="nav-link">Compétences</a></li>
-            <li><a href="#projets" class="nav-link">Projets</a></li>
-            <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
-            <li><a href="en.html" class="nav-link" lang="en" aria-label="English version">EN</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <section id="hero" class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-text">
-              <h1 class="hero-title">
-                <span class="hero-greeting">Bonjour, je suis</span>
-                <span class="hero-name">Roua Bouhouch</span>
-              </h1>
-              <p class="hero-subtitle">Ingénieure en Intelligence Artificielle & Développeuse Full Stack</p>
-              <p class="hero-description">Ingénieure IA spécialisée dans les systèmes d'IA générative prêts pour la production, les LLM, le RAG et les systèmes multi-agents. Chez VINCI Energies, je conçois et industrialise des solutions d'analyse d'exigences, de recherche sémantique et de DevOps.</p>
-              <div class="hero-cta">
-                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-                <a href="#contact" class="btn btn-secondary">Me contacter</a>
-              </div>
-            </div>
-            <div class="hero-image">
-              <div class="image-placeholder">
-                <i class="fas fa-laptop-code"></i>
-              </div>
-            </div>
-          </div>
-          
-          <div class="hero-scroll">
-            <a href="#about" class="scroll-down" aria-label="Défiler vers le bas">
-              <i class="fas fa-chevron-down"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="about">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">À propos de moi</h2>
-            <div class="section-divider"></div>
-          </div>
-          
-          <div class="about-content">
-            <div class="about-text">
-              <div class="about-card">
-                <h3 class="about-subtitle">Ingénieure en Intelligence Artificielle</h3>
-                <p class="about-description">Ingénieure IA spécialisée dans les systèmes d'IA générative prêts pour la production, avec de solides bases en génie logiciel acquises lors de trois années de développement C++ en freelance.</p>
-                <p class="about-description">Chez VINCI Energies, je conçois et industrialise des solutions LLM et RAG pour l'ingénierie des exigences, combinant systèmes multi-agents, recherche sémantique et DevOps. Mon expertise comprend également le deep learning, l'apprentissage par renforcement et les réseaux de neurones graphiques.</p>
-                <p class="about-description">Je recherche un poste à temps plein d'AI Engineer.</p>
-                <div class="about-links">
-                  <a href="#contact" class="btn btn-outline">Ouverte aux postes d'AI Engineer</a>
-                  <a href="#projets" class="btn btn-primary">Voir mes projets IA</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="about-stats">
-              <div class="stat-item">
-                <div class="stat-number">20+</div>
-                <div class="stat-label">Projets réalisés</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">15+</div>
-                <div class="stat-label">Technologies maîtrisées</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">3</div>
-                <div class="stat-label">Années d'expérience</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="competences" class="competences">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Mes Compétences</h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">Technologies et domaines d'expertise</p>
-          </div>
-          
-          <div class="competences-grid">
-            <div class="skill-category">
-              <h3 class="category-title">Intelligence Artificielle</h3>
-              <div class="skills-list">
-                <div class="skill-item">
-                  <i class="fas fa-brain skill-icon"></i>
-                  <div class="skill-info">
-                    <h4 class="skill-name">Machine Learning</h4>
-                    <p class="skill-desc">Régression, classification, clustering, réduction de dimensionnalité</p>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-network-wired skill-icon"></i>
-                  <div class="skill-info">
-                    <h4 class="skill-name">Deep Learning</h4>
-                    <p class="skill-desc">CNN, RNN, PyTorch, TensorFlow, vision par ordinateur, NLP</p>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-robot skill-icon"></i>
-                  <div class="skill-info">
-                    <h4 class="skill-name">Reinforcement Learning</h4>
-                    <p class="skill-desc">Q-Learning, DQN, agents intelligents, optimisation de politiques</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="skill-category">
-              <h3 class="category-title">Développement</h3>
-              <div class="skills-list">
-                <div class="skill-item">
-                  <i class="fas fa-code skill-icon"></i>
-                  <div class="skill-info">
-                    <h4 class="skill-name">Développement Web</h4>
-                    <p class="skill-desc">HTML, CSS, JavaScript, React, PHP, MySQL</p>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-cogs skill-icon"></i>
-                  <div class="skill-info">
-                    <h4 class="skill-name">Programmation OOP</h4>
-                    <p class="skill-desc">C++, C#, Java, Unity, architectures modulaires</p>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-database skill-icon"></i>
-                  <div class="skill-info">
-                    <h4 class="skill-name">Analyse de Données</h4>
-                    <p class="skill-desc">Python, R, pandas, numpy, visualisation, statistiques</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="technologies">
-            <h3 class="technologies-title">Technologies</h3>
-            <div class="tech-icons">
-              <div class="tech-icon" title="Python"><i class="fab fa-python"></i></div>
-              <div class="tech-icon" title="JavaScript"><i class="fab fa-js-square"></i></div>
-              <div class="tech-icon" title="Java"><i class="fab fa-java"></i></div>
-              <div class="tech-icon" title="C++"><i class="fas fa-c"></i></div>
-              <div class="tech-icon" title="React"><i class="fab fa-react"></i></div>
-              <div class="tech-icon" title="Git"><i class="fab fa-git-alt"></i></div>
-              <div class="tech-icon" title="Linux"><i class="fab fa-linux"></i></div>
-              <div class="tech-icon" title="Docker"><i class="fab fa-docker"></i></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projets" class="projets">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Mes Projets</h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">Explorez mes réalisations en Intelligence Artificielle et Développement</p>
-          </div>
-          
-          <div class="projects-filter">
-            <button class="filter-btn active" data-filter="all">Tous</button>
-            <button class="filter-btn" data-filter="ai">IA & ML</button>
-            <button class="filter-btn" data-filter="robotique">Robotique</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="software">Logiciel</button>
-            <button class="filter-btn" data-filter="graphique">Graphique</button>
-          </div>
-          Projet
-          <div class="projects-grid">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1220"><meta name="description" content="Roua Bouhouch, AI Engineer building production GenAI, RAG, LLM and multi-agent systems. Explore experience, expertise and projects.">
+<title>Roua Bouhouch | AI Engineer & Generative AI</title>
+<link rel="canonical" href="https://rouabouhouch.github.io/portfolio/"><link rel="alternate" hreflang="fr" href="https://rouabouhouch.github.io/portfolio/fr.html"><link rel="alternate" hreflang="en" href="https://rouabouhouch.github.io/portfolio/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><script defer src="index.js"></script></head><body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="header"><div class="container header-inner"><a class="brand" href="#hero" aria-label="Roua Bouhouch home"><span class="brand-mark">RB<span>.</span></span><span class="brand-label">ROUA BOUHOUCH</span></a><button class="toggle-btn" aria-label="Open navigation" aria-expanded="false"><span class="hamburger"></span></button><nav class="nav" aria-label="Main navigation"><ul class="nav-list"><li><a class="nav-link" href="#about">About</a></li><li><a class="nav-link" href="#experience">Experience</a></li><li><a class="nav-link" href="#competences">Expertise</a></li><li><a class="nav-link" href="#projets">Projects</a></li><li><a class="nav-link" href="#contact">Contact</a></li><li><a class="lang-link" href="fr.html" lang="fr" aria-label="Switch to French">FR <span aria-hidden="true">↗</span></a></li></ul></nav></div></header>
+<main id="main-content">
+<section class="hero" id="hero"><div class="container hero-layout"><div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> AI ENGINEER · GRONINGEN, NETHERLANDS</div><h1>Building AI that<br><em>works in the real world.</em></h1><p class="hero-subtitle">Generative AI · LLMs · RAG · Multi-Agent Systems</p><p class="hero-description">I design and ship production-ready AI solutions, from intelligent document workflows to reliable multi-agent systems. My work bridges machine learning, software engineering and deployment.</p><div class="hero-cta"><a class="btn btn-primary" href="#projets">Explore my work <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#contact">Get in touch <span aria-hidden="true">→</span></a></div><div class="hero-social"><a href="https://github.com/rouabouhouch" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/rouabouhouch" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:rouabouhouch777@gmail.com">Email ↗</a></div></div><div class="hero-visual" aria-label="Areas of AI specialization"><div class="visual-label">FOCUS AREAS / 2026</div><div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div><div class="visual-core"><span>AI</span><small>ENGINEERING</small></div><div class="visual-chip chip-one">LLM + RAG</div><div class="visual-chip chip-two">Multi-agent</div><div class="visual-chip chip-three">Production ML</div><div class="visual-footer">FROM PROTOTYPE <span>→</span> PRODUCTION</div></div></div></section>
+<div class="trust-strip"><div class="container trust-items"><span>BUILDING FOR</span><strong>VINCI ENERGIES</strong><span class="trust-separator">/</span><strong>OUTLIER (SCALE AI)</strong><span class="trust-separator">/</span><strong>CRNL</strong></div></div>
+<section id="about" class="section about"><div class="container"><div class="section-heading"><span class="section-kicker">01 / ABOUT</span><h2>Engineering intelligence.<br><span>Delivering impact.</span></h2></div><div class="about-grid"><div class="about-main"><p class="lead">AI Engineer specializing in production-ready Generative AI systems, built on a strong software-engineering foundation from freelance C++ development. At VINCI Energies I design and industrialize LLM- and RAG-powered solutions for requirements engineering, combining multi-agent frameworks, semantic retrieval and DevOps, backed by deep learning, reinforcement learning and graph neural networks. Seeking a full-time AI Engineer role.</p><p>I combine hands-on AI development with a software engineering mindset, focusing on traceability, reliability and real deployment rather than demos alone.</p><a class="text-link" href="#experience">Explore my experience <span>↗</span></a></div><div class="about-aside"><div class="info-row"><span>EDUCATION</span><strong>MSc Artificial Intelligence</strong><small>Université Claude Bernard Lyon 1 · 2024–2026</small></div><div class="info-row"><span>BACKGROUND</span><strong>BSc Computer Science</strong><small>Université Claude Bernard Lyon 1 · 2024</small></div><div class="info-row"><span>LANGUAGES</span><strong>English · French · Arabic</strong><small>English C1 (TOEIC 975) · Dutch A1</small></div></div></div></div></section>
+<section id="experience" class="section experience"><div class="container"><div class="section-heading"><span class="section-kicker">02 / EXPERIENCE</span><h2>Work that goes<br><span>beyond the prototype.</span></h2></div><div class="experience-list"><article class="experience-item"><div class="experience-meta"><span class="date">MAR 2026 — PRESENT</span><span class="badge">CURRENT</span></div><div><h3>AI Engineering Intern</h3><p class="company">VINCI Energies · Mobility (Smart Solutions)</p><p>Built the AI core of Chatway using LLM and RAG multi-agent pipelines for industrial requirements analysis, including semantic retrieval, source traceability and structured reporting. Integrated GenAI capabilities into SmartTest and delivered full-stack and DevOps workflows.</p><div class="tag-list"><span>LLM / RAG</span><span>Azure AI Search</span><span>Multi-agent systems</span><span>Next.js</span><span>Docker / CI-CD</span></div></div></article><article class="experience-item"><div class="experience-meta"><span class="date">SEP 2024 — JAN 2026</span></div><div><h3>AI Prompt Engineer · Contractor</h3><p class="company">Outlier (Scale AI) · Remote</p><p>Designed prompts, evaluated AI-generated C++ code and provided technical feedback to improve language-model reasoning, correctness and reliability.</p><div class="tag-list"><span>RLHF</span><span>Prompt engineering</span><span>C++</span><span>LLM evaluation</span></div></div></article><article class="experience-item"><div class="experience-meta"><span class="date">APR — AUG 2024</span></div><div><h3>AI & Data Analysis Intern</h3><p class="company">Lyon Neuroscience Research Center (CRNL)</p><p>Designed Python data pipelines and a platform to consolidate, validate, analyze and visualize neurobiological datasets for research teams.</p><div class="tag-list"><span>Python</span><span>Data engineering</span><span>Machine learning</span></div></div></article><article class="experience-item"><div class="experience-meta"><span class="date">SEP 2020 — JUN 2023</span></div><div><h3>Freelance C++ Developer</h3><p class="company">Self-employed · Remote</p><p>Delivered custom C++ applications, automation utilities and performance-focused components from requirements gathering through testing and deployment.</p><div class="tag-list"><span>C++</span><span>OOP</span><span>STL</span></div></div></article></div></div></section>
+<section id="competences" class="section competences"><div class="container"><div class="section-heading"><span class="section-kicker">03 / EXPERTISE</span><h2>A practical stack<br><span>for intelligent products.</span></h2></div><div class="expertise-grid"><article class="expertise-card"><span class="expertise-index">01</span><h3>Generative AI</h3><p>LLM applications, retrieval-augmented generation, AI agents, prompt engineering, RLHF and semantic search.</p><div class="tag-list"><span>LLMs</span><span>RAG</span><span>Agents</span><span>Embeddings</span></div></article><article class="expertise-card"><span class="expertise-index">02</span><h3>Machine Learning</h3><p>Deep learning, reinforcement learning, graph neural networks and model evaluation with Python and PyTorch.</p><div class="tag-list"><span>PyTorch</span><span>GNN</span><span>DQN / PPO</span><span>scikit-learn</span></div></article><article class="expertise-card"><span class="expertise-index">03</span><h3>Software & MLOps</h3><p>Full-stack AI products, containerized services, cloud deployment, automation and reliable development workflows.</p><div class="tag-list"><span>Python / C++</span><span>TypeScript</span><span>Azure</span><span>Docker</span><span>CI/CD</span></div></article></div></div></section>
+<section id="projets" class="section projets"><div class="container"><div class="section-heading projects-heading"><div><span class="section-kicker">04 / PROJECTS</span><h2>Selected work.<br><span>Real implementations.</span></h2></div><a class="text-link" href="https://github.com/rouabouhouch" target="_blank" rel="noopener noreferrer">All repositories ↗</a></div><p class="section-intro">A collection of AI, data, robotics and software projects. Filter by discipline to find relevant work.</p><div class="projects-filter" aria-label="Filter projects"><button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="ai">AI & ML</button><button class="filter-btn" data-filter="robotique">Robotics</button><button class="filter-btn" data-filter="web">Web</button><button class="filter-btn" data-filter="software">Software</button><button class="filter-btn" data-filter="graphique">Graphics</button></div><div class="projects-grid">
             <div class="project-card" data-category="ai web">
               <div class="project-image">
-                <img src="images/leafnote.svg" alt="Leafnote - Identification de plantes" loading="lazy">
+                <img src="images/leafnote.svg" alt="Leafnote - Plant identification" loading="lazy">
               </div>
               <div class="project-content">
                 <div class="project-tags">
-                  <span class="project-tag">Vision par ordinateur</span>
+                  <span class="project-tag">Computer vision</span>
                   <span class="project-tag">ONNX Runtime</span>
                   <span class="project-tag">JavaScript</span>
                 </div>
-                <h3 class="project-title">Leafnote - Identification de plantes</h3>
-                <p class="project-description">Identification de plantes à partir d’une photo, avec trois suggestions issues d’un modèle préentraîné et des descriptions sourcées. L’inférence s’exécute dans le navigateur : les photos restent sur l’appareil, sans compte ni API payante.</p>
+                <h3 class="project-title">Leafnote - Plant identification</h3>
+                <p class="project-description">Plant identification from a photo, returning three model-based suggestions with sourced descriptions. Runs inference in the browser without uploading photos or requiring an account.</p>
                 <div class="project-links">
-                  <a href="https://rouabouhouch.github.io/leafnote-plant-id/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Démo</a>
+                  <a href="https://rouabouhouch.github.io/leafnote-plant-id/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo</a>
                   <a href="https://github.com/rouabouhouch/leafnote-plant-id" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
                 </div>
               </div>
@@ -236,18 +35,18 @@
 
             <div class="project-card" data-category="ai web">
               <div class="project-image">
-                <img src="images/tablewise.svg" alt="Tablewise - Analyse de fichiers CSV" loading="lazy">
+                <img src="images/tablewise.svg" alt="Tablewise - CSV data analysis" loading="lazy">
               </div>
               <div class="project-content">
                 <div class="project-tags">
-                  <span class="project-tag">Analyse de données</span>
+                  <span class="project-tag">Data analysis</span>
                   <span class="project-tag">Machine Learning</span>
                   <span class="project-tag">JavaScript</span>
                 </div>
-                <h3 class="project-title">Tablewise - Analyse de fichiers CSV</h3>
-                <p class="project-description">Exploration de fichiers CSV avec statistiques, visualisations et contrôle de qualité des données. Comparaison de modèles et de paramètres, évaluation sur un jeu de test séparé et export de rapports, directement dans le navigateur.</p>
+                <h3 class="project-title">Tablewise - CSV data analysis</h3>
+                <p class="project-description">Explore CSV files through descriptive statistics, visualizations and data-quality checks. Compare models on a separate test set and export reports directly in the browser.</p>
                 <div class="project-links">
-                  <a href="https://rouabouhouch.github.io/tablewise-app/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Démo</a>
+                  <a href="https://rouabouhouch.github.io/tablewise-app/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo</a>
                   <a href="https://github.com/rouabouhouch/tablewise-app" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
                 </div>
               </div>
@@ -264,18 +63,16 @@
                   <span class="project-tag">GLSL</span>
                   <span class="project-tag">Shader procédural</span>
                 </div>
-                <h3 class="project-title">Banana Bay - Île tropicale animée</h3>
-                <p class="project-description">
-                  Scène tropicale créée entièrement avec un fragment shader procédural : trois singes animés ramassent des bananes. Animation interactive avec contrôle de vitesse, pause et déplacement du soleil.
-                </p>
+                <h3 class="project-title">Banana Bay - Animated tropical island</h3>
+                <p class="project-description">An interactive WebGL tropical scene created entirely with a procedural fragment shader. Three animated monkeys collect bananas, with controls for speed, pause and sun position.</p>
                 <div class="project-links">
-                  <a href="https://rouabouhouch.github.io/banana-bay/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i> Démo</a>
+                  <a href="https://rouabouhouch.github.io/banana-bay/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
                   <a href="https://github.com/rouabouhouch/banana-bay" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Code</a>
                 </div>
               </div>
             </div>
 
-            <!-- Projets de Master en IA -->
+            <!-- Projects de Master en IA -->
             <div class="project-card" data-category="ai web">
               <div class="project-image">
                 <img src="images/researchmate.png" alt="ResearchMate: Intelligent Document Assistant" loading="lazy">
@@ -289,11 +86,8 @@
                   <span class="project-tag">LLM</span>
                   <span class="project-tag">Ollama</span>
                 </div>
-                <h3 class="project-title">ResearchMate - Assistant Intelligent de Documents</h3>
-                <p class="project-description">
-                  Application intelligente permettant de charger des documents (PDF/TXT) et d'interagir avec eux via des requêtes en langage naturel. 
-                  Combinaison de moteur RAG, embeddings vectoriels et LLM local pour générer des réponses contextuelles.
-                </p>
+                <h3 class="project-title">ResearchMate - Intelligent Document Assistant</h3>
+                <p class="project-description">Document question-answering assistant using PDF/TXT ingestion, vector embeddings, retrieval-augmented generation and a local language model.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/ResearchMate---Intelligent-Document-Assistant" 
                      target="_blank" 
@@ -322,11 +116,8 @@
                   <span class="project-tag">Motion Transfer</span>
                 </div>
                 
-                <h3 class="project-title">Transfert de mouvement et génération d’images de danse guidée par la pose</h3>
-                <p class="project-description">
-                  Génération d’animations de danse par transfert de mouvement basé sur la pose, combinant vision par ordinateur, réseaux neuronaux et GAN 
-                  pour produire des images réalistes à partir de mouvements humains.
-                </p>
+                <h3 class="project-title">Pose-guided dance motion transfer and image generation</h3>
+                <p class="project-description">Pose-guided generation of human dance images and motion transfer using deep learning.</p>
                 
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/image.git" 
@@ -353,11 +144,8 @@
                   <span class="project-tag">Vision</span>
                   <span class="project-tag">TCP</span>
                 </div>
-                <h3 class="project-title">Robots Autonomes & Navigation par Vision</h3>
-                <p class="project-description">
-                  Développement en équipe de robots autonomes dotés d'une navigation basée sur la vision, 
-                  communication TCP et contrôle de mouvement via Python. Système multi-agents coordonnés.
-                </p>
+                <h3 class="project-title">Autonomous Robots & Vision-Based Navigation</h3>
+                <p class="project-description">Autonomous robot navigation and computer-vision experiments.</p>
                 <div class="project-links">
                   <a href="https://github.com/Thomas-aub/Hungry_Hungry_Hippos_Robots/tree/image_analysis" 
                      target="_blank" 
@@ -383,11 +171,8 @@
                   <span class="project-tag">Argumentation</span>
                   <span class="project-tag">ABA+</span>
                 </div>
-                <h3 class="project-title">Framework de Raisonnement Argumentatif (ABA/ABA+)</h3>
-                <p class="project-description">
-                  Conception d'un framework Python modulaire pour l'argumentation basée sur les hypothèses. 
-                  Génération automatique d'arguments, calcul d'attaques et visualisation interactive.
-                </p>
+                <h3 class="project-title">Argumentation Reasoning Framework (ABA/ABA+)</h3>
+                <p class="project-description">Modular Python framework for assumption-based argumentation (ABA/ABA+), modeling inference and reasoning.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/Continuous-Assessment-Report-Reasoning-and-Argumentation-Frameworks-in-AI.git" 
                      target="_blank" 
@@ -409,11 +194,8 @@
                   <span class="project-tag">scikit-learn</span>
                   <span class="project-tag">Streamlit</span>
                 </div>
-                <h3 class="project-title">Système de Recommandation Musicale</h3>
-                <p class="project-description">
-                  Moteur de recommandation par contenu utilisant clustering K-Means et similarité cosinus. 
-                  Application interactive Streamlit avec API Spotify pour l'exploration musicale.
-                </p>
+                <h3 class="project-title">Music Recommendation System</h3>
+                <p class="project-description">Music recommender exploring personalized recommendations from user preferences.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/Sys-recommendation.git" 
                      target="_blank" 
@@ -427,7 +209,7 @@
             
             <div class="project-card" data-category="ai">
               <div class="project-image">
-                <img src="images/product14.png" alt="GNN Prédiction de Liens" loading="lazy">
+                <img src="images/product14.png" alt="GNN Link Prediction" loading="lazy">
               </div>
               <div class="project-content">
                 <div class="project-tags">
@@ -435,11 +217,8 @@
                   <span class="project-tag">GNN</span>
                   <span class="project-tag">Deep Learning</span>
                 </div>
-                <h3 class="project-title">Projet GNN 2025 - Prédiction de Liens</h3>
-                <p class="project-description">
-                  Auto-encodeur variationnel sur graphe (VGAE-GCN) pour la prédiction de liens dans un réseau aéroportuaire mondial. 
-                  Performance : AUC ≈ 0.982.
-                </p>
+                <h3 class="project-title">Projet GNN 2025 - Link Prediction</h3>
+                <p class="project-description">Graph neural network project for link prediction, with AUC of approximately 0.982.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/gnn.git" 
                      target="_blank" 
@@ -449,7 +228,7 @@
                   <a href="https://drive.google.com/file/d/1_Z48kCdSyJFWQ2GsZvTSo5mglwcll0Cq/view" 
                      target="_blank" 
                      class="project-link">
-                    <i class="fas fa-file-pdf"></i> Rapport
+                    <i class="fas fa-file-pdf"></i> Report
                   </a>
                 </div>
               </div>
@@ -457,7 +236,7 @@
             
             <div class="project-card" data-category="ai">
               <div class="project-image">
-                <img src="images/product15.png" alt="Classification d'Émotions" loading="lazy">
+                <img src="images/product15.png" alt="Emotion Classification" loading="lazy">
               </div>
               <div class="project-content">
                 <div class="project-tags">
@@ -465,11 +244,8 @@
                   <span class="project-tag">NLP</span>
                   <span class="project-tag">RNN</span>
                 </div>
-                <h3 class="project-title">Classification d'Émotions (NLP)</h3>
-                <p class="project-description">
-                  Classificateur de texte basé sur RNN avec pipeline NLP complet : tokenisation, vocabulaire, 
-                  encodage one-hot et padding. Précision de 67% sur les tests.
-                </p>
+                <h3 class="project-title">Emotion Classification (NLP)</h3>
+                <p class="project-description">Natural language processing model for classifying emotions in text.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/projetnlp.git" 
                      target="_blank" 
@@ -490,11 +266,8 @@
                   <span class="project-tag">RL</span>
                   <span class="project-tag">DQN</span>
                 </div>
-                <h3 class="project-title">Agents d'Apprentissage par Renforcement</h3>
-                <p class="project-description">
-                  Agents RL pour CartPole et LunarLander : REINFORCE, DQN, exploration epsilon-greedy, 
-                  replay buffer et réseaux cibles. Implémentation complète sous PyTorch.
-                </p>
+                <h3 class="project-title">Reinforcement Learning Agents</h3>
+                <p class="project-description">Reinforcement learning agents trained and evaluated with PyTorch.</p>
                 <div class="project-links">
                   <a href="https://github.com/M2IA-UCBL1/2025-m2ia-intagents-tp1-atraoui.git" 
                      target="_blank" 
@@ -522,7 +295,7 @@
               </div>
             </div>
             
-            <!-- Projets de Licence -->
+            <!-- Projects de Licence -->
             <div class="project-card" data-category="ai robotique">
               <div class="project-image">
                 <img src="images/product6.png" alt="Simulation RPG Tactique" loading="lazy">
@@ -533,11 +306,8 @@
                   <span class="project-tag">Agents</span>
                   <span class="project-tag">Simulation</span>
                 </div>
-                <h3 class="project-title">Simulation de RPG Tactique Distribué</h3>
-                <p class="project-description">
-                  Moteur de jeu de rôle tactique simulant des agents autonomes. Implémentation de stratégies 
-                  individuelles et collectives dans un environnement dynamique multi-agents.
-                </p>
+                <h3 class="project-title">Distributed Tactical RPG Simulation</h3>
+                <p class="project-description">Distributed tactical role-playing simulation involving coordinated software components.</p>
                 <div class="project-links">
                   <a href="https://forge.univ-lyon1.fr/p2314124/lifprojet" 
                      target="_blank" 
@@ -563,11 +333,8 @@
                   <span class="project-tag">SDF</span>
                   <span class="project-tag">3D</span>
                 </div>
-                <h3 class="project-title">Monde Interactif 3D (SDF/GLSL)</h3>
-                <p class="project-description">
-                  Création d'un univers immersif en 3D utilisant des fonctions de distance signées (SDF) 
-                  et des shaders GLSL. Rendu temps réel avec animations et effets visuels avancés.
-                </p>
+                <h3 class="project-title">Interactive 3D World (SDF/GLSL)</h3>
+                <p class="project-description">Interactive 3D world built with signed distance fields and GLSL shaders.</p>
                 <div class="project-links">
              
                   <a href="https://www.shadertoy.com/view/DsKSWz" 
@@ -589,11 +356,8 @@
                   <span class="project-tag">SDL2</span>
                   <span class="project-tag">UML</span>
                 </div>
-                <h3 class="project-title">Jeu de Monopoly (C++)</h3>
-                <p class="project-description">
-                  Version informatique complète du jeu Monopoly développée en C++ avec la bibliothèque SDL2. 
-                  Architecture logicielle robuste avec gestion graphique et logique de jeu avancée.
-                </p>
+                <h3 class="project-title">Monopoly Game (C++)</h3>
+                <p class="project-description">Object-oriented implementation of a Monopoly board game in C++.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/Monopoy" 
                      target="_blank" 
@@ -603,7 +367,7 @@
                   <a href="https://www.youtube.com/watch?v=wLCoDOVFmoc&list=PLvEUWy29bijDN5Fpw8_gCQV-vYirbHVCT" 
                      target="_blank" 
                      class="project-link">
-                    <i class="fab fa-youtube"></i> Démo Complète
+                    <i class="fab fa-youtube"></i> Demo Complète
                   </a>
                 </div>
               </div>
@@ -620,10 +384,7 @@
                   <span class="project-tag">MVC</span>
                 </div>
                 <h3 class="project-title">Sokoban (Java MVC)</h3>
-                <p class="project-description">
-                  Implémentation du jeu Sokoban en Java suivant l'architecture Modèle-Vue-Contrôleur. 
-                  Gestion avancée des niveaux, interface graphique et algorithmes de résolution.
-                </p>
+                <p class="project-description">Sokoban puzzle game implemented with Java and an MVC architecture.</p>
                 <div class="project-links">
                   <a href="https://forge.univ-lyon1.fr/p2001434/sokoban" 
                      target="_blank" 
@@ -633,7 +394,7 @@
                   <a href="https://drive.google.com/file/d/118vvhNPbHh6zuUAl9zlxDcuYtCMIWmoQ/view" 
                      target="_blank" 
                      class="project-link">
-                    <i class="fas fa-file-pdf"></i> Rapport
+                    <i class="fas fa-file-pdf"></i> Report
                   </a>
                 </div>
               </div>
@@ -649,11 +410,8 @@
                   <span class="project-tag">SQL</span>
                   <span class="project-tag">MySQL</span>
                 </div>
-                <h3 class="project-title">Générateur de Playlists Personnalisées</h3>
-                <p class="project-description">
-                  Application web complète de gestion de playlists musicales avec base de données SQL. 
-                  Interface utilisateur intuitive, gestion des comptes et recommandations personnalisées.
-                </p>
+                <h3 class="project-title">Personalized Playlist Generator</h3>
+                <p class="project-description">Playlist generator based on selected user parameters and musical preferences.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/Syst-me-de-Gestion-de-Playlists-Musicales" 
                      target="_blank" 
@@ -664,7 +422,7 @@
               </div>
             </div>
             
-            <!-- Projets Personnels Additionnels -->
+            <!-- Projects Personnels Additionnels -->
             <div class="project-card" data-category="web">
               <div class="project-image">
                 <img src="images/product10.png" alt="Application Web Gestion Données" loading="lazy">
@@ -675,11 +433,8 @@
                   <span class="project-tag">Flask</span>
                   <span class="project-tag">DataViz</span>
                 </div>
-                <h3 class="project-title">Application Web de Gestion et Visualisation de Données</h3>
-                <p class="project-description">
-                  Application complète pour télécharger, analyser et visualiser des fichiers Excel. 
-                  Génération de statistiques, gestion des valeurs manquantes et préparation pour l'IA.
-                </p>
+                <h3 class="project-title">Web Application for Data Management and Visualization</h3>
+                <p class="project-description">Web application for managing, exploring and visualizing structured data.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/Application-Web-de-Gestion-et-Visualisation-de-Donn-es/tree/master" 
                      target="_blank" 
@@ -700,11 +455,8 @@
                   <span class="project-tag">Pygame</span>
                   <span class="project-tag">IA</span>
                 </div>
-                <h3 class="project-title">Jeu de Pong contre IA</h3>
-                <p class="project-description">
-                  Implémentation du jeu classique Pong avec une IA intelligente en adversaire. 
-                  Gameplay dynamique avec augmentation progressive de la difficulté.
-                </p>
+                <h3 class="project-title">Pong Against AI</h3>
+                <p class="project-description">Pong game featuring an AI-controlled opponent.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/Pong" 
                      target="_blank" 
@@ -725,11 +477,8 @@
                   <span class="project-tag">pandas</span>
                   <span class="project-tag">Analyse</span>
                 </div>
-                <h3 class="project-title">Analyse Dynamique des Ventes</h3>
-                <p class="project-description">
-                  Analyse complète de données de ventes synthétiques : corrélations, tendances mensuelles, 
-                  segmentation client et modélisation prédictive des prix. Insights business avancés.
-                </p>
+                <h3 class="project-title">Dynamic Sales Analysis</h3>
+                <p class="project-description">Interactive sales analytics with visualizations to track and understand performance.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/Analyse-Dynamique-des-Ventes-Exploration-et-Pr-vision" 
                      target="_blank" 
@@ -747,19 +496,16 @@
               <div class="project-content">
                 <div class="project-tags">
                   <span class="project-tag">R</span>
-                  <span class="project-tag">Statistiques</span>
+                  <span class="project-tag">Statistics</span>
                   <span class="project-tag">Analyse</span>
                 </div>
-                <h3 class="project-title">Projet Statistique Avancé avec R</h3>
-                <p class="project-description">
-                  Analyse statistique complète avec R : visualisation de données, tests statistiques, 
-                  modélisation et interprétation des résultats pour la prise de décision.
-                </p>
+                <h3 class="project-title">Advanced Statistical Analysis with R</h3>
+                <p class="project-description">Statistical analysis in R, including visualizations, hypothesis tests, modeling and results interpretation.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/Stats-with-R/blob/main/stats.pdf" 
                      target="_blank" 
                      class="project-link">
-                    <i class="fas fa-file-pdf"></i> Rapport
+                    <i class="fas fa-file-pdf"></i> Report
                   </a>
                 </div>
               </div>
@@ -775,11 +521,8 @@
                   <span class="project-tag">CSS</span>
                   <span class="project-tag">JavaScript</span>
                 </div>
-                <h3 class="project-title">Application Pomodoro Productivité</h3>
-                <p class="project-description">
-                  Application web pour la gestion du temps avec technique Pomodoro. 
-                  Chronomètre intelligent, compteur de sessions et système de récompenses.
-                </p>
+                <h3 class="project-title">Pomodoro Productivity App</h3>
+                <p class="project-description">Web-based Pomodoro productivity timer with session tracking and rewards.</p>
                 <div class="project-links">
                   <a href="https://github.com/rouabouhouch/Pomodoro" 
                      target="_blank" 
@@ -790,134 +533,7 @@
               </div>
             </div>
             
-            <!-- Carte "Plus de Projets" -->
-            <div class="project-card more-projects">
-              <div class="more-content">
-                <i class="fas fa-plus"></i>
-                <h3>Et bien plus...</h3>
-                <p>Découvrez tous mes projets complets sur GitHub</p>
-                <a href="https://github.com/rouabouhouch" target="_blank" class="btn btn-outline">
-                  <i class="fab fa-github"></i> Explorer GitHub
-                </a>
-                <p class="more-stats">
-                  <span>25+ Projets</span> • 
-                  <span>10+ Technologies</span> • 
-                  <span>3+ Années d'expérience</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Contactez-moi</h2>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">Ouverte aux opportunités à temps plein en ingénierie IA</p>
-          </div>
-          
-          <div class="contact-content">
-            <div class="contact-info">
-              <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <div>
-                  <h3>Email</h3>
-                  <a href="mailto:rouabouhouch777@gmail.com">rouabouhouch777@gmail.com</a>
-                </div>
-              </div>
-              <div class="contact-item">
-                <i class="fab fa-github"></i>
-                <div>
-                  <h3>GitHub</h3>
-                  <a href="https://github.com/rouabouhouch" target="_blank">github.com/rouabouhouch</a>
-                </div>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                  <h3>Localisation</h3>
-                  <p>Groningen, Pays-Bas</p>
-                </div>
-              </div>
-            </div>
-            
-            <form id="contact-form" 
-                  action="https://formsubmit.co/dff13b48ee4daa06201a3ae9a93f1d27" 
-                  method="POST"
-                  class="contact-form">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://rouabouhouch.github.io/portfolio/success.html">
-              
-              <div class="form-group">
-                <label for="name">Nom *</label>
-                <input type="text" id="name" name="name" required placeholder="Votre nom">
-              </div>
-              
-              <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required placeholder="votre@email.com">
-              </div>
-              
-              <div class="form-group">
-                <label for="subject">Sujet</label>
-                <input type="text" id="subject" name="subject" placeholder="Sujet du message">
-              </div>
-              
-              <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
-              </div>
-              
-              <button type="submit" class="btn btn-primary">
-                <i class="fas fa-paper-plane"></i> Envoyer le message
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <span class="logo-text">RB</span>
-            <p>Ingénieure en IA & Développeuse Full Stack</p>
-          </div>
-          
-          <div class="footer-links">
-            <a href="#hero">Accueil</a>
-            <a href="#about">À Propos</a>
-            <a href="#competences">Compétences</a>
-            <a href="#projets">Projets</a>
-            <a href="#contact">Contact</a>
-          </div>
-          
-          <div class="footer-social">
-            <a href="https://github.com/rouabouhouch" target="_blank" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/roua-bouhouch" target="_blank" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:rouabouhouch777@gmail.com" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-        </div>
-        
-        <div class="footer-bottom">
-          <p>&copy; <span id="current-year"></span> Roua Bouhouch. Tous droits réservés.</p>
-          <p>Portfolio réalisé avec ❤️</p>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      // Set current year in footer
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-  </body>
-</html>
+            <!-- Carte "Plus de Projects" -->
+            </div></div></section>
+<section id="contact" class="section contact"><div class="container contact-panel"><div><span class="section-kicker">05 / CONTACT</span><h2>Let's build something<br><span>meaningful.</span></h2><p>Open to full-time AI engineering opportunities and interesting technical conversations.</p><a class="btn btn-primary" href="mailto:rouabouhouch777@gmail.com">Get in touch <span>↗</span></a></div><div class="contact-details"><a href="mailto:rouabouhouch777@gmail.com">rouabouhouch777@gmail.com ↗</a><a href="https://www.linkedin.com/in/rouabouhouch" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/rouabouhouch" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span>Groningen, Netherlands</span></div></div></section></main>
+<footer class="footer"><div class="container footer-inner"><div><strong>RB<span>.</span></strong><small>Roua Bouhouch · AI Engineer</small></div><p>© <span id="current-year"></span> Roua Bouhouch. All rights reserved.</p><a href="#hero">Back to top ↑</a></div></footer></body></html>
