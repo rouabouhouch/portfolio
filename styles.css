@@ -55,3 +55,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #4ca9ed;outline-offset:4p
 @media (hover:none),(pointer:coarse){.project-card{--rx:0deg!important;--ry:0deg!important}.project-card:hover{--lift:0px}.project-image img{will-change:auto}}
 @media(max-width:700px){.project-image{height:215px}.project-card{transform:none!important}.project-card.is-revealed{animation-duration:.5s}}
 @media(prefers-reduced-motion:reduce){.project-image::before{animation:none!important}.project-card,.project-image img,.project-visual-cue{transition:none!important;transform:none!important}.project-card.is-revealed{animation:none!important}.project-card::after{display:none}}
+
+/* Project-first About layout */
+.about-grid{display:block;max-width:920px}.about-main{max-width:900px}.about .lead{font-size:clamp(17px,2vw,21px)}
